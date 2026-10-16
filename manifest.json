@@ -7,8 +7,8 @@
     "ip": "mc304.boxtoplay.com:26840"
   },
   "theme": {
-    "launcher_name": "CHILL CRAFT SHORE",
-    "tagline": "Bienvenue sur le serveur",
+    "launcher_name": "CHILL CRAFT",
+    "tagline": "Bienvenue sur CHILLCRAFT",
     "icon": "⛏",
     "bg": "#0d1117",
     "panel": "#141a22",
@@ -33,22 +33,22 @@
     {
       "path": "config/astikorcartsredux-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/astikorcartsredux-client.toml",
-      "sha1": "1413624b66bef4f606f0dd749db9854a0098c3b4"
+      "sha1": "d12416003f130ee7821f1a0fa25914f1429bf21e"
     },
     {
       "path": "config/astikorcartsredux-common.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/astikorcartsredux-common.toml",
-      "sha1": "0578d257acd756051960fe6f3f7548155b75a3c9"
+      "sha1": "8505c8c4ec2d3bc5f27bd19a0116797157d831db"
     },
     {
       "path": "config/carryon-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/carryon-client.toml",
-      "sha1": "9fb9fbd6e6ec34a8f19e6a1e3adc113119448bec"
+      "sha1": "176606ec0485c90520a2c9190c5dafcc31568b3e"
     },
     {
       "path": "config/carryon-common.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/carryon-common.toml",
-      "sha1": "d091d3a1dd77efc1dfe683b5142fba2ed2bf1c7e"
+      "sha1": "a074b2f6f4633a2007e0c5ee3ac861e4aeaa09ff"
     },
     {
       "path": "config/embeddium-fingerprint.json",
@@ -83,42 +83,42 @@
     {
       "path": "config/farmersdelight-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/farmersdelight-client.toml",
-      "sha1": "0837b7da65d2d2b5fe8430ecddae8a97379d8c55"
+      "sha1": "4e314f228c99e0adcf467832ea97f82e6704707c"
     },
     {
       "path": "config/farmersdelight-common.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/farmersdelight-common.toml",
-      "sha1": "5f3a0af48b61c6b2935284df7282d6a32fad7414"
+      "sha1": "c66edbf2080e5a1cf5af877b4b3cab75f6d0535d"
     },
     {
       "path": "config/fml.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/fml.toml",
-      "sha1": "726869383a0dd9368201319b75b902b2e5c8207f"
+      "sha1": "07de292abe68900e79f3cc408fcdaaa0e2a34a11"
     },
     {
       "path": "config/forge-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/forge-client.toml",
-      "sha1": "55e80f51f0c9cf66de1f95c4d775b24dc59627a1"
+      "sha1": "95d6c8253b4e0ad9300aa359cf75646c3c3775b6"
     },
     {
       "path": "config/oculus.properties",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/oculus.properties",
-      "sha1": "8e69932f28f83552b2f97ff0810a86f2b8bec679"
+      "sha1": "ec46b3a216cb292c017a9c4209017e2704dac81b"
     },
     {
       "path": "config/patchouli-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/patchouli-client.toml",
-      "sha1": "e4987ed22204ca092b2d62a5fa1a065fe88fd9b2"
+      "sha1": "44523d99721e89142e2211db7fbf0391636fc512"
     },
     {
       "path": "config/recruits-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruits-client.toml",
-      "sha1": "60603a27d7cd51cd793290ab3c42fb6209d41dd8"
+      "sha1": "c98b0f4f6ffc64d640897170272987ff358c73b5"
     },
     {
       "path": "config/recruitsskins-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruitsskins-client.toml",
-      "sha1": "c6fa8aee13976c430ae709933af527497f2095f1"
+      "sha1": "745fd2ac5651644c9765d3d4876030f75de6969a"
     },
     {
       "path": "config/recruitsskins-rules.toml",
@@ -128,47 +128,47 @@
     {
       "path": "config/siege-machines-specs.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/siege-machines-specs.toml",
-      "sha1": "f96b2c00ae6c00e46d93c74ff11c60deca634845"
+      "sha1": "b1080f3cfd921a23a6b7f9a250efd97166eb754c"
     },
     {
       "path": "config/smallships-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/smallships-client.toml",
-      "sha1": "594582b47f227aae4687ac2108877494f0b90db6"
+      "sha1": "6c4928a21f4b1151cb7e5937e8a743b22f901339"
     },
     {
       "path": "config/smallships-common.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/smallships-common.toml",
-      "sha1": "e82565d47d11a02f1adc27cfdc6b144370767432"
+      "sha1": "3128be87f5c8c2532e45b2d1521a42149be40278"
     },
     {
       "path": "config/sophisticatedbackpacks-common.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/sophisticatedbackpacks-common.toml",
-      "sha1": "300cb0348cbb41fb48bab6849802495881fc9b93"
+      "sha1": "dd3ee31ec814d87ee34198c5fbc21bcb8aba081e"
     },
     {
       "path": "config/sophisticatedcore-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/sophisticatedcore-client.toml",
-      "sha1": "235f9d3d77f6fa349bd2381f78e231103e8a54c6"
+      "sha1": "fc180a6c820775d659f736874e35d623b861a868"
     },
     {
       "path": "config/sophisticatedcore-common.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/sophisticatedcore-common.toml",
-      "sha1": "2aa0e9b7c7c7f72865a5bd9eb0f08336c80d77a2"
+      "sha1": "3259192b7f8b38855134aa24a6acc183a1ee470e"
     },
     {
       "path": "config/tfc-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/tfc-client.toml",
-      "sha1": "61c0fe4829ddbe351d279e1f36ef25f322f1826f"
+      "sha1": "b5014fe241f85dea63354666585101b489b69be1"
     },
     {
       "path": "config/tfc-common.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/tfc-common.toml",
-      "sha1": "c81273acedcfdcab81aa3ff09b8b90d339693b66"
+      "sha1": "bf3a4add0ad2cbc92bfadc8823ba821f211d5725"
     },
     {
       "path": "config/voicechat-client.toml",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat-client.toml",
-      "sha1": "6a87c562a167f9b5faf95bf1f446422f887ff96a"
+      "sha1": "7456618fae7d6cd80d7552761801a1363d2a2c72"
     },
     {
       "path": "config/antiquelegacy/armor.json5",
@@ -318,57 +318,42 @@
     {
       "path": "config/jei/ingredient-list-mod-sort-order.ini",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/ingredient-list-mod-sort-order.ini",
-      "sha1": "dd1c37f6faf16afeffd27b5d4dd34be91ce72fc0"
+      "sha1": "cf8cb95f8dbce576588346a8c66473ea809a2a73"
     },
     {
       "path": "config/jei/ingredient-list-type-sort-order.ini",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/ingredient-list-type-sort-order.ini",
-      "sha1": "dc48be3ecfb2cd9c06a53712b3044f8123a6c06e"
+      "sha1": "ee9a73e1f8e96e8959353e4648963538548af38d"
     },
     {
       "path": "config/jei/jei-client.ini",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-client.ini",
-      "sha1": "eb958e2e22e54a58700abe3fc4f860fcd247b844"
+      "sha1": "c93200429f4db7b8392a7d6a3680c95d0c545b34"
     },
     {
       "path": "config/jei/jei-colors.ini",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-colors.ini",
-      "sha1": "46f80e4857aa8f8d9b0928e107c4391d54b3b313"
+      "sha1": "3acac72b07b43c2d60220fb454a50fca76cebe2c"
     },
     {
       "path": "config/jei/jei-debug.ini",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-debug.ini",
-      "sha1": "e76a74cd66991a5a40b0a3cd7f1dfad000ff726c"
+      "sha1": "65f68f46aee96c7647df872cb03dede121ccdb30"
     },
     {
       "path": "config/jei/jei-mod-id-format.ini",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-mod-id-format.ini",
-      "sha1": "2cd7853bd68950b2d61a80dd549ed65be0e0f6cb"
+      "sha1": "1fce6f1486a1514d04bfd84632449ca35ccde225"
     },
     {
       "path": "config/jei/recipe-category-sort-order.ini",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/recipe-category-sort-order.ini",
-      "sha1": "49a3862a74c106c076060cc06feb3d385ef00e13"
-    },
-    {
-      "path": "config/jei/world/local/New World/lookupHistory.ini",
-      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/world/local/New%20World/lookupHistory.ini",
-      "sha1": "c3b73b5f79a237e6125ca1cc9a5ea49e2b6b0afd"
-    },
-    {
-      "path": "config/jei/world/server/Minecraft Server (mc304_boxtoplay_com 26840)/lookupHistory.ini",
-      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/world/server/Minecraft%20Server%20%28mc304_boxtoplay_com%2026840%29/lookupHistory.ini",
-      "sha1": "08a8412a59b58c620c8ded3103d989a23940457d"
-    },
-    {
-      "path": "config/jei/world/server/Minecraft Server (mc305_boxtoplay_com 27143)/lookupHistory.ini",
-      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/world/server/Minecraft%20Server%20%28mc305_boxtoplay_com%2027143%29/lookupHistory.ini",
-      "sha1": "66b1d03ea7b83e4fe0372e8e9b59911d22e101b9"
+      "sha1": "a7593076dc07e719be3582fdfb6522b54ceea207"
     },
     {
       "path": "config/recruits_skins/_README.txt",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruits_skins/_README.txt",
-      "sha1": "6aa682223b5fccd73fd09adc29f41a4878a77e78"
+      "sha1": "282ee3231e6bd01f3dd65b67ec086704a5ac27a4"
     },
     {
       "path": "config/recruits_skins/jules.png",
@@ -398,32 +383,27 @@
     {
       "path": "config/voicechat/category-volumes.properties",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/category-volumes.properties",
-      "sha1": "c9f8fd05a81e609071657f5c4c27d5cd377c5b12"
+      "sha1": "8416bbe0743249676e7ebadf8905f06bc3f7d6ac"
     },
     {
       "path": "config/voicechat/player-volumes.properties",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/player-volumes.properties",
-      "sha1": "c77eeb6fb16c2844e9bbcf19667d30c9401212d5"
+      "sha1": "7dfbbc24e0f07706c5f2f837c6acb2510e5140ae"
     },
     {
       "path": "config/voicechat/translations.properties",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/translations.properties",
-      "sha1": "383e00e7dd0d5f00daa2ffcfd24c939d255dc7e3"
-    },
-    {
-      "path": "config/voicechat/username-cache.json",
-      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/username-cache.json",
-      "sha1": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f"
+      "sha1": "51ed6d74ce390b2219a85fb3cfdad19c85039d79"
     },
     {
       "path": "config/voicechat/voicechat-client.properties",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/voicechat-client.properties",
-      "sha1": "adeab4ff5eb48230877a8c12c09f35fb4d5f022f"
+      "sha1": "16e87f12ed10713cec1117d11a845c5fc5e5b6fa"
     },
     {
       "path": "config/voicechat/voicechat-server.properties",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/voicechat-server.properties",
-      "sha1": "4d24b1dea6c3fe109ce7282637d3dc7e73ae4c49"
+      "sha1": "0c0bdbcbf2fac059f7f0acca392ae5e427154db5"
     },
     {
       "path": "mods/Advanced Stands MC 1.20.1 - 2.0.0 Forge.jar",

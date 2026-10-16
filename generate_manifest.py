@@ -27,8 +27,8 @@ SERVER_IP = "mc304.boxtoplay.com:26840"   # à remplacer par l'adresse réelle, 
 
 # --- Thème (modifiable à tout moment sans recréer l'.exe) ---------------------
 THEME = {
-    "launcher_name": "CHILL CRAFT SHORE",
-    "tagline": "Bienvenue sur le serveur",
+    "launcher_name": "CHILL CRAFT",
+    "tagline": "Bienvenue sur CHILLCRAFT",
     "icon": "⛏",
     "bg": "#0d1117",
     "panel": "#141a22",
@@ -43,7 +43,7 @@ THEME = {
 }
 
 # --- Mise à jour automatique du launcher ---------------------------------------
-LAUNCHER_VERSION = "1.1.0"   # doit être la même que LAUNCHER_VERSION dans launcher_v5.py quand tu publies
+LAUNCHER_VERSION = "1.1.1"   # doit être la même que LAUNCHER_VERSION dans launcher_v5.py quand tu publies
 LAUNCHER_URL = "https://github.com/Bombureuh/ChillCraft/releases/latest/download/ChillCraftLauncher.exe"
 LAUNCHER_EXE = os.path.join("dist", "ChillCraftLauncher.exe")   # .exe local, sert à calculer l'empreinte
 
@@ -56,12 +56,27 @@ def sha1_of(path):
     return h.hexdigest()
 
 
+def pack_sha1(path):
+    """Empreinte d'un fichier du pack. Les fichiers texte sont comptés avec des fins de ligne LF,
+    car Git (GitHub Desktop) convertit CRLF en LF à l'envoi sous Windows."""
+    with open(path, "rb") as f:
+        data = f.read()
+    if b"\x00" not in data[:8000]:
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha1(data).hexdigest()
+
+
+# Fichiers générés par le jeu (historique, noms de joueurs...) : inutiles à distribuer
+EXCLUDE_PREFIXES = ("config/jei/world/", "config/voicechat/username-cache.json")
+
 files = []
 for root, _, names in os.walk(PACK_DIR):
     for name in sorted(names):
         full = os.path.join(root, name)
         rel = os.path.relpath(full, PACK_DIR).replace(os.sep, "/")
-        files.append({"path": rel, "url": f"{BASE_URL}/{quote(rel)}", "sha1": sha1_of(full)})
+        if rel.startswith(EXCLUDE_PREFIXES):
+            continue
+        files.append({"path": rel, "url": f"{BASE_URL}/{quote(rel)}", "sha1": pack_sha1(full)})
 
 manifest = {
     "minecraft": MINECRAFT_VERSION,
