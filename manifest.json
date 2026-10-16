@@ -20,7 +20,13 @@
     "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene_mc.webp",
     "logo_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/logo_mc.png"
   },
-  "servers": [],
+  "servers": [
+    {
+      "name": "Survie Vanilla",
+      "ip": "mc304.boxtoplay.com:26624",
+      "minecraft": "26.3"
+    }
+  ],
   "files": [
     {
       "path": "config/MouseTweaks.cfg",

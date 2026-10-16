@@ -29,7 +29,7 @@ SERVER_IP = "mc304.boxtoplay.com:26840"   # à remplacer par l'adresse réelle, 
 # Chaque joueur peut aussi choisir "Serveur personnalisé" (n'importe quelle version + IP de son choix).
 # Exemple : {"name": "Survie Vanilla", "ip": "vanilla.monserveur.fr", "minecraft": "1.21.1"}
 EXTRA_SERVERS = [
-    # {"name": "Survie Vanilla", "ip": "mc304.boxtoplay.com:26624", "minecraft": "26.3"},
+     {"name": "Survie Vanilla", "ip": "mc304.boxtoplay.com:26624", "minecraft": "26.3"},
 ]
 
 # --- Thème (modifiable à tout moment sans recréer l'.exe) ---------------------
