@@ -1,26 +1,51 @@
 """
-Génère manifest.json pour le launcher.
+Génère manifest.json pour le launcher (v5).
 
-Utilisation :
-1. Crée un dossier "pack" à côté de ce script, avec dedans :
-     pack/mods/      -> tous les .jar des mods
-     pack/config/    -> (optionnel) les fichiers de config à imposer aux joueurs
-2. Modifie les constantes ci-dessous.
-3. Lance : py generate_manifest.py
-4. Héberge le contenu du dossier "pack" ET manifest.json sur ton site/GitHub,
-   de façon à ce que BASE_URL + "/mods/xxx.jar" soit téléchargeable.
-5. Mets l'URL de manifest.json dans MODPACK_URL du launcher.
+Dossier attendu (à côté de ce script) :
+    pack/mods/      -> les .jar des mods
+    pack/config/    -> (optionnel) les fichiers de config à imposer aux joueurs
+
+Utilisation : py generate_manifest.py, puis envoie manifest.json et pack/ sur GitHub.
 """
 import hashlib
 import json
 import os
 from urllib.parse import quote
 
+# --- Fichiers du pack --------------------------------------------------------
 PACK_DIR = "pack"
-BASE_URL = "https://exemple.com/pack"   # sans slash final
-MINECRAFT_VERSION = "1.20.1"
-LOADER = "forge"                         # "forge", "fabric", "neoforge", "quilt" ou "" (vanilla)
-LOADER_VERSION = ""                      # vide = dernière version disponible (mieux vaut fixer la même que le serveur)
+BASE_URL = "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack"   # sans slash final
+
+# --- Jeu ---------------------------------------------------------------------
+MINECRAFT_VERSION = "1.20.1"     # à adapter à ton serveur
+LOADER = "forge"                 # "forge", "fabric", "neoforge", "quilt" ou "" (vanilla)
+LOADER_VERSION = ""              # vide = dernière version ; mieux vaut fixer celle du serveur
+
+# --- Serveur (modifiable à tout moment sans recréer l'.exe) -------------------
+SERVER_NAME = "ChillCraft"
+SERVER_IP = "mc304.boxtoplay.com:26840"   # à remplacer par l'adresse réelle, ex. "play.monserveur.fr:25565"
+
+# --- Thème (modifiable à tout moment sans recréer l'.exe) ---------------------
+THEME = {
+    "launcher_name": "CHILL CRAFT SHORE",
+    "tagline": "Bienvenue sur le serveur",
+    "icon": "⛏",
+    "bg": "#0d1117",
+    "panel": "#141a22",
+    "card": "#1c232d",
+    "accent": "#f97316",          # orange du kayak
+    "accent_hover": "#ea580c",
+    "text": "#f3f4f6",
+    "muted": "#8b97a8",
+    # Image de la scène à gauche (fixe ou animée : .webp, .gif, .png, .jpg).
+    # Envoie scene.webp à la racine de ton dépôt GitHub.
+    "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene.webp",
+}
+
+# --- Mise à jour automatique du launcher ---------------------------------------
+LAUNCHER_VERSION = "1.1.0"   # doit être la même que LAUNCHER_VERSION dans launcher_v5.py quand tu publies
+LAUNCHER_URL = "https://github.com/Bombureuh/ChillCraft/releases/latest/download/ChillCraftLauncher.exe"
+LAUNCHER_EXE = os.path.join("dist", "ChillCraftLauncher.exe")   # .exe local, sert à calculer l'empreinte
 
 
 def sha1_of(path):
@@ -36,18 +61,22 @@ for root, _, names in os.walk(PACK_DIR):
     for name in sorted(names):
         full = os.path.join(root, name)
         rel = os.path.relpath(full, PACK_DIR).replace(os.sep, "/")
-        files.append({
-            "path": rel,
-            "url": f"{BASE_URL}/{quote(rel)}",
-            "sha1": sha1_of(full),
-        })
+        files.append({"path": rel, "url": f"{BASE_URL}/{quote(rel)}", "sha1": sha1_of(full)})
 
 manifest = {
     "minecraft": MINECRAFT_VERSION,
     "loader": LOADER,
     "loader_version": LOADER_VERSION,
+    "server": {"name": SERVER_NAME, "ip": SERVER_IP},
+    "theme": THEME,
     "files": files,
 }
+
+if os.path.exists(LAUNCHER_EXE):
+    manifest["launcher"] = {"version": LAUNCHER_VERSION, "url": LAUNCHER_URL, "sha1": sha1_of(LAUNCHER_EXE)}
+    print(f"Mise à jour du launcher incluse (version {LAUNCHER_VERSION}).")
+else:
+    print(f"{LAUNCHER_EXE} introuvable : pas de mise à jour du launcher dans ce manifest.")
 
 with open("manifest.json", "w", encoding="utf-8") as f:
     json.dump(manifest, f, indent=2, ensure_ascii=False)

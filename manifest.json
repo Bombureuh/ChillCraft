@@ -2,660 +2,677 @@
   "minecraft": "1.20.1",
   "loader": "forge",
   "loader_version": "",
+  "server": {
+    "name": "ChillCraft",
+    "ip": "mc304.boxtoplay.com:26840"
+  },
+  "theme": {
+    "launcher_name": "CHILL CRAFT SHORE",
+    "tagline": "Bienvenue sur le serveur",
+    "icon": "⛏",
+    "bg": "#0d1117",
+    "panel": "#141a22",
+    "card": "#1c232d",
+    "accent": "#f97316",
+    "accent_hover": "#ea580c",
+    "text": "#f3f4f6",
+    "muted": "#8b97a8",
+    "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene.webp"
+  },
   "files": [
     {
       "path": "config/MouseTweaks.cfg",
-      "url": "https://exemple.com/pack/config/MouseTweaks.cfg",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/MouseTweaks.cfg",
       "sha1": "651b3e4db2d430dc1da3566b2984b264061a6794"
     },
     {
       "path": "config/ambientsounds-client.json",
-      "url": "https://exemple.com/pack/config/ambientsounds-client.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/ambientsounds-client.json",
       "sha1": "e29bba5ead5073bd4f0149c3c6738084d8d8e307"
     },
     {
       "path": "config/astikorcartsredux-client.toml",
-      "url": "https://exemple.com/pack/config/astikorcartsredux-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/astikorcartsredux-client.toml",
       "sha1": "1413624b66bef4f606f0dd749db9854a0098c3b4"
     },
     {
       "path": "config/astikorcartsredux-common.toml",
-      "url": "https://exemple.com/pack/config/astikorcartsredux-common.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/astikorcartsredux-common.toml",
       "sha1": "0578d257acd756051960fe6f3f7548155b75a3c9"
     },
     {
       "path": "config/carryon-client.toml",
-      "url": "https://exemple.com/pack/config/carryon-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/carryon-client.toml",
       "sha1": "9fb9fbd6e6ec34a8f19e6a1e3adc113119448bec"
     },
     {
       "path": "config/carryon-common.toml",
-      "url": "https://exemple.com/pack/config/carryon-common.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/carryon-common.toml",
       "sha1": "d091d3a1dd77efc1dfe683b5142fba2ed2bf1c7e"
     },
     {
       "path": "config/embeddium-fingerprint.json",
-      "url": "https://exemple.com/pack/config/embeddium-fingerprint.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/embeddium-fingerprint.json",
       "sha1": "0d75eefcdfad2d79257f83ae487400734f795516"
     },
     {
       "path": "config/embeddium-mixins.properties",
-      "url": "https://exemple.com/pack/config/embeddium-mixins.properties",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/embeddium-mixins.properties",
       "sha1": "a729ee50d18cf2204ff9fc33bc21641d55185c88"
     },
     {
       "path": "config/embeddium-options.json",
-      "url": "https://exemple.com/pack/config/embeddium-options.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/embeddium-options.json",
       "sha1": "c46718c2b687959e2f8f7c46ba64eb2b7413a80d"
     },
     {
       "path": "config/entity_model_features.json",
-      "url": "https://exemple.com/pack/config/entity_model_features.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/entity_model_features.json",
       "sha1": "7fefe690037952896b8f0d2cdf1f27f6ac53a58d"
     },
     {
       "path": "config/entity_texture_features.json",
-      "url": "https://exemple.com/pack/config/entity_texture_features.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/entity_texture_features.json",
       "sha1": "5fc3d7567c74811f362b997baa24dc25c2163b6e"
     },
     {
       "path": "config/etf_warnings.json",
-      "url": "https://exemple.com/pack/config/etf_warnings.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/etf_warnings.json",
       "sha1": "1573fc320a363b30a1a5e4cae1d4596ec177085d"
     },
     {
       "path": "config/farmersdelight-client.toml",
-      "url": "https://exemple.com/pack/config/farmersdelight-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/farmersdelight-client.toml",
       "sha1": "0837b7da65d2d2b5fe8430ecddae8a97379d8c55"
     },
     {
       "path": "config/farmersdelight-common.toml",
-      "url": "https://exemple.com/pack/config/farmersdelight-common.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/farmersdelight-common.toml",
       "sha1": "5f3a0af48b61c6b2935284df7282d6a32fad7414"
     },
     {
       "path": "config/fml.toml",
-      "url": "https://exemple.com/pack/config/fml.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/fml.toml",
       "sha1": "726869383a0dd9368201319b75b902b2e5c8207f"
     },
     {
       "path": "config/forge-client.toml",
-      "url": "https://exemple.com/pack/config/forge-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/forge-client.toml",
       "sha1": "55e80f51f0c9cf66de1f95c4d775b24dc59627a1"
     },
     {
       "path": "config/oculus.properties",
-      "url": "https://exemple.com/pack/config/oculus.properties",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/oculus.properties",
       "sha1": "8e69932f28f83552b2f97ff0810a86f2b8bec679"
     },
     {
       "path": "config/patchouli-client.toml",
-      "url": "https://exemple.com/pack/config/patchouli-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/patchouli-client.toml",
       "sha1": "e4987ed22204ca092b2d62a5fa1a065fe88fd9b2"
     },
     {
       "path": "config/recruits-client.toml",
-      "url": "https://exemple.com/pack/config/recruits-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruits-client.toml",
       "sha1": "60603a27d7cd51cd793290ab3c42fb6209d41dd8"
     },
     {
       "path": "config/recruitsskins-client.toml",
-      "url": "https://exemple.com/pack/config/recruitsskins-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruitsskins-client.toml",
       "sha1": "c6fa8aee13976c430ae709933af527497f2095f1"
     },
     {
       "path": "config/recruitsskins-rules.toml",
-      "url": "https://exemple.com/pack/config/recruitsskins-rules.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruitsskins-rules.toml",
       "sha1": "5f47bfad66fa5d4676277f7f33152451dd1324d3"
     },
     {
       "path": "config/siege-machines-specs.toml",
-      "url": "https://exemple.com/pack/config/siege-machines-specs.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/siege-machines-specs.toml",
       "sha1": "f96b2c00ae6c00e46d93c74ff11c60deca634845"
     },
     {
       "path": "config/smallships-client.toml",
-      "url": "https://exemple.com/pack/config/smallships-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/smallships-client.toml",
       "sha1": "594582b47f227aae4687ac2108877494f0b90db6"
     },
     {
       "path": "config/smallships-common.toml",
-      "url": "https://exemple.com/pack/config/smallships-common.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/smallships-common.toml",
       "sha1": "e82565d47d11a02f1adc27cfdc6b144370767432"
     },
     {
       "path": "config/sophisticatedbackpacks-common.toml",
-      "url": "https://exemple.com/pack/config/sophisticatedbackpacks-common.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/sophisticatedbackpacks-common.toml",
       "sha1": "300cb0348cbb41fb48bab6849802495881fc9b93"
     },
     {
       "path": "config/sophisticatedcore-client.toml",
-      "url": "https://exemple.com/pack/config/sophisticatedcore-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/sophisticatedcore-client.toml",
       "sha1": "235f9d3d77f6fa349bd2381f78e231103e8a54c6"
     },
     {
       "path": "config/sophisticatedcore-common.toml",
-      "url": "https://exemple.com/pack/config/sophisticatedcore-common.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/sophisticatedcore-common.toml",
       "sha1": "2aa0e9b7c7c7f72865a5bd9eb0f08336c80d77a2"
     },
     {
       "path": "config/tfc-client.toml",
-      "url": "https://exemple.com/pack/config/tfc-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/tfc-client.toml",
       "sha1": "61c0fe4829ddbe351d279e1f36ef25f322f1826f"
     },
     {
       "path": "config/tfc-common.toml",
-      "url": "https://exemple.com/pack/config/tfc-common.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/tfc-common.toml",
       "sha1": "c81273acedcfdcab81aa3ff09b8b90d339693b66"
     },
     {
       "path": "config/voicechat-client.toml",
-      "url": "https://exemple.com/pack/config/voicechat-client.toml",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat-client.toml",
       "sha1": "6a87c562a167f9b5faf95bf1f446422f887ff96a"
     },
     {
       "path": "config/antiquelegacy/armor.json5",
-      "url": "https://exemple.com/pack/config/antiquelegacy/armor.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/antiquelegacy/armor.json5",
       "sha1": "f04abfd1ebdf0b2b084dd6cd4b3fb3aa912f205b"
     },
     {
       "path": "config/antiquelegacy/shields.json5",
-      "url": "https://exemple.com/pack/config/antiquelegacy/shields.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/antiquelegacy/shields.json5",
       "sha1": "21578a979f1331e57295b65a03aed2aefafeabfe"
     },
     {
       "path": "config/antiquelegacy/weapons.json5",
-      "url": "https://exemple.com/pack/config/antiquelegacy/weapons.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/antiquelegacy/weapons.json5",
       "sha1": "24f59672252a3c3578d070f114de94ed1139d8c4"
     },
     {
       "path": "config/bettercombat/client.json5",
-      "url": "https://exemple.com/pack/config/bettercombat/client.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/bettercombat/client.json5",
       "sha1": "f80eb0aee4b780834fb53b67d81d0888f1e82e1b"
     },
     {
       "path": "config/bettercombat/fallback_compatibility.json",
-      "url": "https://exemple.com/pack/config/bettercombat/fallback_compatibility.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/bettercombat/fallback_compatibility.json",
       "sha1": "8efde77c49f6cd7c4035ee3f554c25f63532335a"
     },
     {
       "path": "config/bettercombat/server.json5",
-      "url": "https://exemple.com/pack/config/bettercombat/server.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/bettercombat/server.json5",
       "sha1": "78014c28e4cdac421da611e2bd86ec19d1425f89"
     },
     {
       "path": "config/ekotsk/weapons.json5",
-      "url": "https://exemple.com/pack/config/ekotsk/weapons.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/ekotsk/weapons.json5",
       "sha1": "8dbc695d919bce18df594e412d7c26fdedc80acb"
     },
     {
       "path": "config/epicknights/armor.json5",
-      "url": "https://exemple.com/pack/config/epicknights/armor.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknights/armor.json5",
       "sha1": "c9b29e24eb45d66074b89ebbcd54f47d42679d9b"
     },
     {
       "path": "config/epicknights/general.json5",
-      "url": "https://exemple.com/pack/config/epicknights/general.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknights/general.json5",
       "sha1": "3352660b9e6b17d04a0b566f6b468fdbebd8f455"
     },
     {
       "path": "config/epicknights/mobs_equipment.json5",
-      "url": "https://exemple.com/pack/config/epicknights/mobs_equipment.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknights/mobs_equipment.json5",
       "sha1": "05f856c098bb6c49f360edc0b2b30b3c1592369c"
     },
     {
       "path": "config/epicknights/shields.json5",
-      "url": "https://exemple.com/pack/config/epicknights/shields.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknights/shields.json5",
       "sha1": "27bd5e72b9108027e199029e342d7122b2ae8f7f"
     },
     {
       "path": "config/epicknights/weapons.json5",
-      "url": "https://exemple.com/pack/config/epicknights/weapons.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknights/weapons.json5",
       "sha1": "eb599aac0e79611ce682c0288cbefa4cf8894482"
     },
     {
       "path": "config/epicknightsaddon/armors.json5",
-      "url": "https://exemple.com/pack/config/epicknightsaddon/armors.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknightsaddon/armors.json5",
       "sha1": "10c0182a40f55d957b25449935a6716f821ce9c1"
     },
     {
       "path": "config/epicknightsaddon/shields.json5",
-      "url": "https://exemple.com/pack/config/epicknightsaddon/shields.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknightsaddon/shields.json5",
       "sha1": "d66861de0ef6335946629940dfc5ec67a56bc225"
     },
     {
       "path": "config/epicknightsaddon/weapons.json5",
-      "url": "https://exemple.com/pack/config/epicknightsaddon/weapons.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/epicknightsaddon/weapons.json5",
       "sha1": "3f57b8a73e2f182130698485be6fb9a93155a136"
     },
     {
       "path": "config/incontrol/areas.json",
-      "url": "https://exemple.com/pack/config/incontrol/areas.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/areas.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/breakevents.json",
-      "url": "https://exemple.com/pack/config/incontrol/breakevents.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/breakevents.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/effects.json",
-      "url": "https://exemple.com/pack/config/incontrol/effects.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/effects.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/events.json",
-      "url": "https://exemple.com/pack/config/incontrol/events.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/events.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/experience.json",
-      "url": "https://exemple.com/pack/config/incontrol/experience.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/experience.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/leftclicks.json",
-      "url": "https://exemple.com/pack/config/incontrol/leftclicks.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/leftclicks.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/loot.json",
-      "url": "https://exemple.com/pack/config/incontrol/loot.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/loot.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/phases.json",
-      "url": "https://exemple.com/pack/config/incontrol/phases.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/phases.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/placeevents.json",
-      "url": "https://exemple.com/pack/config/incontrol/placeevents.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/placeevents.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/rightclicks.json",
-      "url": "https://exemple.com/pack/config/incontrol/rightclicks.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/rightclicks.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/spawn.json",
-      "url": "https://exemple.com/pack/config/incontrol/spawn.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/spawn.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/spawner.json",
-      "url": "https://exemple.com/pack/config/incontrol/spawner.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/spawner.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/incontrol/summonaid.json",
-      "url": "https://exemple.com/pack/config/incontrol/summonaid.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/incontrol/summonaid.json",
       "sha1": "97d170e1550eee4afc0af065b78cda302a97674c"
     },
     {
       "path": "config/jei/blacklist.json",
-      "url": "https://exemple.com/pack/config/jei/blacklist.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/blacklist.json",
       "sha1": "7a9c83de081216d9061bffda2d30114104ef6ee3"
     },
     {
       "path": "config/jei/ingredient-list-mod-sort-order.ini",
-      "url": "https://exemple.com/pack/config/jei/ingredient-list-mod-sort-order.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/ingredient-list-mod-sort-order.ini",
       "sha1": "dd1c37f6faf16afeffd27b5d4dd34be91ce72fc0"
     },
     {
       "path": "config/jei/ingredient-list-type-sort-order.ini",
-      "url": "https://exemple.com/pack/config/jei/ingredient-list-type-sort-order.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/ingredient-list-type-sort-order.ini",
       "sha1": "dc48be3ecfb2cd9c06a53712b3044f8123a6c06e"
     },
     {
       "path": "config/jei/jei-client.ini",
-      "url": "https://exemple.com/pack/config/jei/jei-client.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-client.ini",
       "sha1": "eb958e2e22e54a58700abe3fc4f860fcd247b844"
     },
     {
       "path": "config/jei/jei-colors.ini",
-      "url": "https://exemple.com/pack/config/jei/jei-colors.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-colors.ini",
       "sha1": "46f80e4857aa8f8d9b0928e107c4391d54b3b313"
     },
     {
       "path": "config/jei/jei-debug.ini",
-      "url": "https://exemple.com/pack/config/jei/jei-debug.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-debug.ini",
       "sha1": "e76a74cd66991a5a40b0a3cd7f1dfad000ff726c"
     },
     {
       "path": "config/jei/jei-mod-id-format.ini",
-      "url": "https://exemple.com/pack/config/jei/jei-mod-id-format.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/jei-mod-id-format.ini",
       "sha1": "2cd7853bd68950b2d61a80dd549ed65be0e0f6cb"
     },
     {
       "path": "config/jei/recipe-category-sort-order.ini",
-      "url": "https://exemple.com/pack/config/jei/recipe-category-sort-order.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/recipe-category-sort-order.ini",
       "sha1": "49a3862a74c106c076060cc06feb3d385ef00e13"
     },
     {
       "path": "config/jei/world/local/New World/lookupHistory.ini",
-      "url": "https://exemple.com/pack/config/jei/world/local/New%20World/lookupHistory.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/world/local/New%20World/lookupHistory.ini",
       "sha1": "c3b73b5f79a237e6125ca1cc9a5ea49e2b6b0afd"
     },
     {
       "path": "config/jei/world/server/Minecraft Server (mc304_boxtoplay_com 26840)/lookupHistory.ini",
-      "url": "https://exemple.com/pack/config/jei/world/server/Minecraft%20Server%20%28mc304_boxtoplay_com%2026840%29/lookupHistory.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/world/server/Minecraft%20Server%20%28mc304_boxtoplay_com%2026840%29/lookupHistory.ini",
       "sha1": "08a8412a59b58c620c8ded3103d989a23940457d"
     },
     {
       "path": "config/jei/world/server/Minecraft Server (mc305_boxtoplay_com 27143)/lookupHistory.ini",
-      "url": "https://exemple.com/pack/config/jei/world/server/Minecraft%20Server%20%28mc305_boxtoplay_com%2027143%29/lookupHistory.ini",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/jei/world/server/Minecraft%20Server%20%28mc305_boxtoplay_com%2027143%29/lookupHistory.ini",
       "sha1": "66b1d03ea7b83e4fe0372e8e9b59911d22e101b9"
     },
     {
       "path": "config/recruits_skins/_README.txt",
-      "url": "https://exemple.com/pack/config/recruits_skins/_README.txt",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruits_skins/_README.txt",
       "sha1": "6aa682223b5fccd73fd09adc29f41a4878a77e78"
     },
     {
       "path": "config/recruits_skins/jules.png",
-      "url": "https://exemple.com/pack/config/recruits_skins/jules.png",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruits_skins/jules.png",
       "sha1": "0ff7b7625efb907d148f725042d21a479f3d8746"
     },
     {
       "path": "config/recruits_skins/medieval-adventurer.png",
-      "url": "https://exemple.com/pack/config/recruits_skins/medieval-adventurer.png",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruits_skins/medieval-adventurer.png",
       "sha1": "30eb0d7775179021a48659316cabc8c0157a81d5"
     },
     {
       "path": "config/recruits_skins/oceanwolfie-medieval-fixed.png",
-      "url": "https://exemple.com/pack/config/recruits_skins/oceanwolfie-medieval-fixed.png",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/recruits_skins/oceanwolfie-medieval-fixed.png",
       "sha1": "e41ba225a8341281c9f20a6623e56769e6ea0076"
     },
     {
       "path": "config/slavicarmory/armors.json5",
-      "url": "https://exemple.com/pack/config/slavicarmory/armors.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/slavicarmory/armors.json5",
       "sha1": "6620d0b7183044758387a368ebfa0dfdd2837aa2"
     },
     {
       "path": "config/slavicarmory/weapons.json5",
-      "url": "https://exemple.com/pack/config/slavicarmory/weapons.json5",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/slavicarmory/weapons.json5",
       "sha1": "9ffb9983ea99edca87a3d663186abcc297a41149"
     },
     {
       "path": "config/voicechat/category-volumes.properties",
-      "url": "https://exemple.com/pack/config/voicechat/category-volumes.properties",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/category-volumes.properties",
       "sha1": "c9f8fd05a81e609071657f5c4c27d5cd377c5b12"
     },
     {
       "path": "config/voicechat/player-volumes.properties",
-      "url": "https://exemple.com/pack/config/voicechat/player-volumes.properties",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/player-volumes.properties",
       "sha1": "c77eeb6fb16c2844e9bbcf19667d30c9401212d5"
     },
     {
       "path": "config/voicechat/translations.properties",
-      "url": "https://exemple.com/pack/config/voicechat/translations.properties",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/translations.properties",
       "sha1": "383e00e7dd0d5f00daa2ffcfd24c939d255dc7e3"
     },
     {
       "path": "config/voicechat/username-cache.json",
-      "url": "https://exemple.com/pack/config/voicechat/username-cache.json",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/username-cache.json",
       "sha1": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f"
     },
     {
       "path": "config/voicechat/voicechat-client.properties",
-      "url": "https://exemple.com/pack/config/voicechat/voicechat-client.properties",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/voicechat-client.properties",
       "sha1": "adeab4ff5eb48230877a8c12c09f35fb4d5f022f"
     },
     {
       "path": "config/voicechat/voicechat-server.properties",
-      "url": "https://exemple.com/pack/config/voicechat/voicechat-server.properties",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/config/voicechat/voicechat-server.properties",
       "sha1": "4d24b1dea6c3fe109ce7282637d3dc7e73ae4c49"
     },
     {
       "path": "mods/Advanced Stands MC 1.20.1 - 2.0.0 Forge.jar",
-      "url": "https://exemple.com/pack/mods/Advanced%20Stands%20MC%201.20.1%20-%202.0.0%20Forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/Advanced%20Stands%20MC%201.20.1%20-%202.0.0%20Forge.jar",
       "sha1": "8b1cdbf9a9753bc9d5360edd4eee9075cee1743c"
     },
     {
       "path": "mods/AmbientSounds_FORGE_v6.3.8_mc1.20.1.jar",
-      "url": "https://exemple.com/pack/mods/AmbientSounds_FORGE_v6.3.8_mc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/AmbientSounds_FORGE_v6.3.8_mc1.20.1.jar",
       "sha1": "87ea0cd8ec56763185ee0db09eec7c676969e4da"
     },
     {
       "path": "mods/CreativeCore_FORGE_v2.12.39_mc1.20.1.jar",
-      "url": "https://exemple.com/pack/mods/CreativeCore_FORGE_v2.12.39_mc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/CreativeCore_FORGE_v2.12.39_mc1.20.1.jar",
       "sha1": "aef9a8ebdf0be50b6bd8da8ab4153f5085f71a80"
     },
     {
       "path": "mods/FarmersDelight-1.20.1-1.3.4.jar",
-      "url": "https://exemple.com/pack/mods/FarmersDelight-1.20.1-1.3.4.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/FarmersDelight-1.20.1-1.3.4.jar",
       "sha1": "26f615fd35f652021f5b0f1cba68afa7d578fe15"
     },
     {
       "path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
-      "url": "https://exemple.com/pack/mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
       "sha1": "d751153e722a4e014691c83f39f5b07c6ec5333c"
     },
     {
       "path": "mods/Patchouli-1.20.1-85-FORGE.jar",
-      "url": "https://exemple.com/pack/mods/Patchouli-1.20.1-85-FORGE.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/Patchouli-1.20.1-85-FORGE.jar",
       "sha1": "d4614507d6e4c7cb464bba5eca891978272062ef"
     },
     {
       "path": "mods/Recruits Siege Compatibility-2.1.0.jar",
-      "url": "https://exemple.com/pack/mods/Recruits%20Siege%20Compatibility-2.1.0.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/Recruits%20Siege%20Compatibility-2.1.0.jar",
       "sha1": "562c502cac57f4e6c437a99c7c6888e364446405"
     },
     {
       "path": "mods/[1.20.1-Forge]vexillum-0.4.jar",
-      "url": "https://exemple.com/pack/mods/%5B1.20.1-Forge%5Dvexillum-0.4.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/%5B1.20.1-Forge%5Dvexillum-0.4.jar",
       "sha1": "64056c2ace3769952656b416fc9ff285819a7b2b"
     },
     {
       "path": "mods/[1.20.1-forge]-Epic-Knights-Ores-and-Alloys-1.1.jar",
-      "url": "https://exemple.com/pack/mods/%5B1.20.1-forge%5D-Epic-Knights-Ores-and-Alloys-1.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/%5B1.20.1-forge%5D-Epic-Knights-Ores-and-Alloys-1.1.jar",
       "sha1": "f518c42c64f472e464adc067da389c0797af141b"
     },
     {
       "path": "mods/[1.20.1]romancraft-0.9-forge.jar",
-      "url": "https://exemple.com/pack/mods/%5B1.20.1%5Dromancraft-0.9-forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/%5B1.20.1%5Dromancraft-0.9-forge.jar",
       "sha1": "112a9cba5f4a98b57d9e9bae64c8887100777ae0"
     },
     {
       "path": "mods/architectury-9.2.14-forge.jar",
-      "url": "https://exemple.com/pack/mods/architectury-9.2.14-forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/architectury-9.2.14-forge.jar",
       "sha1": "a52918a500ff421180a1cbd1a0cabee712134ec4"
     },
     {
       "path": "mods/astikorcartsredux-1.2.5.jar",
-      "url": "https://exemple.com/pack/mods/astikorcartsredux-1.2.5.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/astikorcartsredux-1.2.5.jar",
       "sha1": "77a95e6f367d286d903ea2bc2aa7145f2ec7108f"
     },
     {
       "path": "mods/bettercombat-forge-1.9.0+1.20.1.jar",
-      "url": "https://exemple.com/pack/mods/bettercombat-forge-1.9.0%2B1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/bettercombat-forge-1.9.0%2B1.20.1.jar",
       "sha1": "ea7e7247132cb3acacadd96b2b6b635c4cc63a74"
     },
     {
       "path": "mods/carryon-forge-1.20.1-2.1.2.7.jar",
-      "url": "https://exemple.com/pack/mods/carryon-forge-1.20.1-2.1.2.7.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/carryon-forge-1.20.1-2.1.2.7.jar",
       "sha1": "9999714ca3dd2f2401f0396ca44f3b27c3784c4f"
     },
     {
       "path": "mods/cloth-config-11.1.136-forge.jar",
-      "url": "https://exemple.com/pack/mods/cloth-config-11.1.136-forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/cloth-config-11.1.136-forge.jar",
       "sha1": "c65d07748acc57ceb45d53b3964368b84f34d54f"
     },
     {
       "path": "mods/corpse-forge-1.20.1-1.0.23.jar",
-      "url": "https://exemple.com/pack/mods/corpse-forge-1.20.1-1.0.23.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/corpse-forge-1.20.1-1.0.23.jar",
       "sha1": "843b16ca88bc5c390bb22a2a84437e6bffdd43dd"
     },
     {
       "path": "mods/ekotsk-forge-1.20.1_1.5.0.jar",
-      "url": "https://exemple.com/pack/mods/ekotsk-forge-1.20.1_1.5.0.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/ekotsk-forge-1.20.1_1.5.0.jar",
       "sha1": "59590758987f629d4a4390557d3d5f645bb4c19d"
     },
     {
       "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
-      "url": "https://exemple.com/pack/mods/embeddium-0.3.31%2Bmc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/embeddium-0.3.31%2Bmc1.20.1.jar",
       "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f"
     },
     {
       "path": "mods/entity_model_features-3.3.6-1.20.1-forge.jar",
-      "url": "https://exemple.com/pack/mods/entity_model_features-3.3.6-1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/entity_model_features-3.3.6-1.20.1-forge.jar",
       "sha1": "3bcfc7e1a205002a7171a7c3b89ab4ca63c78d81"
     },
     {
       "path": "mods/entity_texture_features-7.2.2-1.20.1-forge.jar",
-      "url": "https://exemple.com/pack/mods/entity_texture_features-7.2.2-1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/entity_texture_features-7.2.2-1.20.1-forge.jar",
       "sha1": "514da2c4ed1a61a2c68bb29786512f1fa58f1b37"
     },
     {
       "path": "mods/epic-knights-1.20.1-forge-10.11.jar",
-      "url": "https://exemple.com/pack/mods/epic-knights-1.20.1-forge-10.11.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/epic-knights-1.20.1-forge-10.11.jar",
       "sha1": "b76f56523dcde7ae30f4a3c299b1d104348b92eb"
     },
     {
       "path": "mods/epic-knights-addon-1.20.x-forge-2.6.jar",
-      "url": "https://exemple.com/pack/mods/epic-knights-addon-1.20.x-forge-2.6.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/epic-knights-addon-1.20.x-forge-2.6.jar",
       "sha1": "c5d284743d3d59a7ca4cdfdf42e4a01afb10e146"
     },
     {
       "path": "mods/epic-knights-antique-legacy-1.20.x-forge-1.13.jar",
-      "url": "https://exemple.com/pack/mods/epic-knights-antique-legacy-1.20.x-forge-1.13.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/epic-knights-antique-legacy-1.20.x-forge-1.13.jar",
       "sha1": "de812ad140b67bbace4ef7be33e035c7e1beca89"
     },
     {
       "path": "mods/epic-knights-slavic-armory-1.20.x-forge-2.1.jar",
-      "url": "https://exemple.com/pack/mods/epic-knights-slavic-armory-1.20.x-forge-2.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/epic-knights-slavic-armory-1.20.x-forge-2.1.jar",
       "sha1": "e54539d7eee96e5441db89ac580bcb4fc3ae534a"
     },
     {
       "path": "mods/fusion-1.3.15a-forge-mc1.20.1.jar",
-      "url": "https://exemple.com/pack/mods/fusion-1.3.15a-forge-mc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/fusion-1.3.15a-forge-mc1.20.1.jar",
       "sha1": "9c2dbd6a540815bdadb51f098cca6b4c9e72143f"
     },
     {
       "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
-      "url": "https://exemple.com/pack/mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/geckolib-forge-1.20.1-4.8.4.jar",
       "sha1": "81982cc287f80ffabb2fd36d22cc95e4255c739d"
     },
     {
       "path": "mods/incontrol-1.20-9.5.0.jar",
-      "url": "https://exemple.com/pack/mods/incontrol-1.20-9.5.0.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/incontrol-1.20-9.5.0.jar",
       "sha1": "d9de091a691c65bb24523036de66b13939427fde"
     },
     {
       "path": "mods/jei-1.20.1-forge-15.56.0.205.jar",
-      "url": "https://exemple.com/pack/mods/jei-1.20.1-forge-15.56.0.205.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/jei-1.20.1-forge-15.56.0.205.jar",
       "sha1": "7f64b7f8fde7f001ef054dabe3618a8780ba2650"
     },
     {
       "path": "mods/mcw-doors-1.1.5-mc1.20.1forge.jar",
-      "url": "https://exemple.com/pack/mods/mcw-doors-1.1.5-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/mcw-doors-1.1.5-mc1.20.1forge.jar",
       "sha1": "fe6a9eb2fbc78300a6286fd25854c9f087e689a6"
     },
     {
       "path": "mods/mcw-lights-1.1.5-mc1.20.1forge.jar",
-      "url": "https://exemple.com/pack/mods/mcw-lights-1.1.5-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/mcw-lights-1.1.5-mc1.20.1forge.jar",
       "sha1": "76dde38745ad436f2784f71939dc0941d7d51c6e"
     },
     {
       "path": "mods/mcw-mcwfences-1.2.1-mc1.20.1forge.jar",
-      "url": "https://exemple.com/pack/mods/mcw-mcwfences-1.2.1-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/mcw-mcwfences-1.2.1-mc1.20.1forge.jar",
       "sha1": "d24bc6e1ba7f04e058db019ae5ca3d10edd9510a"
     },
     {
       "path": "mods/mcw-mcwwindows-2.4.2-mc1.20.1forge.jar",
-      "url": "https://exemple.com/pack/mods/mcw-mcwwindows-2.4.2-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/mcw-mcwwindows-2.4.2-mc1.20.1forge.jar",
       "sha1": "214da89b2153d496343bde8626283975e358edbd"
     },
     {
       "path": "mods/mcw-trapdoors-1.1.5-mc1.20.1forge.jar",
-      "url": "https://exemple.com/pack/mods/mcw-trapdoors-1.1.5-mc1.20.1forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/mcw-trapdoors-1.1.5-mc1.20.1forge.jar",
       "sha1": "1b3b4b40041346b19bc9ab280b288a9f6b77b513"
     },
     {
       "path": "mods/oculus-mc1.20.1-1.8.0.jar",
-      "url": "https://exemple.com/pack/mods/oculus-mc1.20.1-1.8.0.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/oculus-mc1.20.1-1.8.0.jar",
       "sha1": "984f774e71790deaec674c7587bd24e0711871b2"
     },
     {
       "path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
-      "url": "https://exemple.com/pack/mods/player-animation-lib-forge-1.0.2-rc1%2B1.20.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/player-animation-lib-forge-1.0.2-rc1%2B1.20.jar",
       "sha1": "16808f94a41d45d8e986b4e4ea6b02ba57fa058a"
     },
     {
       "path": "mods/ranksandtitles-1.2.0.jar",
-      "url": "https://exemple.com/pack/mods/ranksandtitles-1.2.0.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/ranksandtitles-1.2.0.jar",
       "sha1": "3a9320d0a36029dc1113792d88de9edd6f7a622c"
     },
     {
       "path": "mods/rechiseled-1.2.6-forge-mc1.20.1.jar",
-      "url": "https://exemple.com/pack/mods/rechiseled-1.2.6-forge-mc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/rechiseled-1.2.6-forge-mc1.20.1.jar",
       "sha1": "21d490e6aa8ba2ac7fad315d937b0b8f21b8c639"
     },
     {
       "path": "mods/recruits-1.20.1-1.15.2.jar",
-      "url": "https://exemple.com/pack/mods/recruits-1.20.1-1.15.2.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/recruits-1.20.1-1.15.2.jar",
       "sha1": "8d2ed3f0ab18c67a1d9394526bcae47b3ec162ab"
     },
     {
       "path": "mods/recruitsskins-0.2.0.jar",
-      "url": "https://exemple.com/pack/mods/recruitsskins-0.2.0.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/recruitsskins-0.2.0.jar",
       "sha1": "5f6af35f911ca078216b849212171533633fcb36"
     },
     {
       "path": "mods/siege-machines-1.20.1-forge-1.39.jar",
-      "url": "https://exemple.com/pack/mods/siege-machines-1.20.1-forge-1.39.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/siege-machines-1.20.1-forge-1.39.jar",
       "sha1": "0b18809ea67014f527984fd07ca01c444beab03c"
     },
     {
       "path": "mods/siegeweapons-1.20.1-0.2.5.jar",
-      "url": "https://exemple.com/pack/mods/siegeweapons-1.20.1-0.2.5.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/siegeweapons-1.20.1-0.2.5.jar",
       "sha1": "f4ae32159b78d6d5e9f1c11588107678cd1151bd"
     },
     {
       "path": "mods/smallships-forge-1.20.1-2.0.0-b1.4.jar",
-      "url": "https://exemple.com/pack/mods/smallships-forge-1.20.1-2.0.0-b1.4.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/smallships-forge-1.20.1-2.0.0-b1.4.jar",
       "sha1": "9998ddc8a278e0b87ab642d289ae2a1e3dbebef6"
     },
     {
       "path": "mods/sophisticatedbackpacks-1.20.1-3.26.3.2157.jar",
-      "url": "https://exemple.com/pack/mods/sophisticatedbackpacks-1.20.1-3.26.3.2157.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/sophisticatedbackpacks-1.20.1-3.26.3.2157.jar",
       "sha1": "9be2c9c53e063890b90bc6b24cce3fc96f7cfa47"
     },
     {
       "path": "mods/sophisticatedcore-1.20.1-1.5.1.2335.jar",
-      "url": "https://exemple.com/pack/mods/sophisticatedcore-1.20.1-1.5.1.2335.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/sophisticatedcore-1.20.1-1.5.1.2335.jar",
       "sha1": "68f35e2930bff5f30340419257b38962df2e0983"
     },
     {
       "path": "mods/supermartijn642configlib-1.1.8-forge-mc1.20.jar",
-      "url": "https://exemple.com/pack/mods/supermartijn642configlib-1.1.8-forge-mc1.20.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/supermartijn642configlib-1.1.8-forge-mc1.20.jar",
       "sha1": "f80f9eed728966adcfbcc848633e789645057281"
     },
     {
       "path": "mods/supermartijn642corelib-1.1.24a-forge-mc1.20.1.jar",
-      "url": "https://exemple.com/pack/mods/supermartijn642corelib-1.1.24a-forge-mc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/supermartijn642corelib-1.1.24a-forge-mc1.20.1.jar",
       "sha1": "3d0171588c7d1e4d1ab741dd864763b25dfcd75f"
     },
     {
       "path": "mods/twoplayersonehorse-forge-1.20.1-1.0.3.jar",
-      "url": "https://exemple.com/pack/mods/twoplayersonehorse-forge-1.20.1-1.0.3.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/twoplayersonehorse-forge-1.20.1-1.0.3.jar",
       "sha1": "95c9c0e3f5e38b756fd7e4d77a9f029d920602ef"
     },
     {
       "path": "mods/vapourware-FORGE-1.20.1-0.1.10.jar",
-      "url": "https://exemple.com/pack/mods/vapourware-FORGE-1.20.1-0.1.10.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/vapourware-FORGE-1.20.1-0.1.10.jar",
       "sha1": "495351459d381175435d12d503d4b918f77b72f0"
     },
     {
       "path": "mods/voicechat-forge-1.20.1-2.6.22.jar",
-      "url": "https://exemple.com/pack/mods/voicechat-forge-1.20.1-2.6.22.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/voicechat-forge-1.20.1-2.6.22.jar",
       "sha1": "cc94c3eecc325ea3066ee3cd8bf57142d1b11762"
     },
     {
       "path": "mods/workers-1.20.1-2.0.3.jar",
-      "url": "https://exemple.com/pack/mods/workers-1.20.1-2.0.3.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/workers-1.20.1-2.0.3.jar",
       "sha1": "1f68527132995485145433b07cd459fb4b602d06"
     }
   ]
