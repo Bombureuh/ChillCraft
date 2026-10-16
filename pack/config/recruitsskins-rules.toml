@@ -1,0 +1,432 @@
+# Recruits Skins -- contextual skin rules
+# =======================================
+#
+# You do not need this file. Out of the box it does nothing at all: every skin in
+# config/recruits_skins is eligible for every Recruit, exactly as it was before.
+#
+# To use it, set selectionMode = "rules" in config/recruitsskins-client.toml,
+# then uncomment and edit the examples below. Reload with F3+T or /recruitsskins reload.
+# Run /recruitsskins rules validate to check your edits, and /recruitsskins explain while
+# looking at a Recruit to see which rule picked its skin.
+#
+# Full guide: docs/skin-rules.md in the mod's repository.
+#
+# This file is created once and never overwritten, so your edits and comments are safe.
+
+
+# The schema this file is written against. Leave it alone; a future version of the mod
+# will use it to understand an older file rather than guessing at it.
+schemaVersion = 1
+
+
+[defaults]
+	# Where a Recruit ends up when no rule claims it.
+	fallbackPool = "all"
+
+	# What happens when no rule matched at all.
+	#   fallback - use fallbackPool. The default.
+	#   upstream - leave the Recruit with Recruits' own texture.
+	noMatch = "fallback"
+
+	# What a rule does by default when it matched but its pools were empty.
+	#   continue - try the next rule. The default.
+	#   fallback - use fallbackPool.
+	#   upstream - leave the Recruit with Recruits' own texture.
+	emptyRule = "continue"
+
+	# false - a mistake costs you the pool or rule you got wrong, and the rest still work.
+	# true  - any mistake rejects the whole file and keeps the last version that worked.
+	#         Worth turning on if you are shipping a modpack.
+	strictValidation = false
+
+
+# ---------------------------------------------------------------------------
+# Pools
+#
+# A pool is a named group of skins you already have. It copies nothing and creates
+# no extra texture -- it just says which files belong together.
+#
+# Patterns are matched against the file's path under config/recruits_skins, lowercase,
+# with / separators on every operating system.
+#
+#   *   any characters within one folder or file name
+#   ?   exactly one character
+#   **  any number of whole folders
+#
+# Includes are applied first, then excludes.
+# ---------------------------------------------------------------------------
+
+[pools.all]
+	include = ["**/*.png"]
+	exclude = []
+
+
+# ---------------------------------------------------------------------------
+# Everything below is commented out. Uncomment what you want.
+# ---------------------------------------------------------------------------
+
+
+# --- 1. Pools by unit type -------------------------------------------------
+#
+# unitTypes is the kind of unit Recruits registered: recruit, recruit_shieldman, bowman,
+# crossbowman, nomad, horseman, messenger, scout, patrol_leader, captain, siege_engineer
+# or villager_noble. It never changes for a given unit.
+#
+# This is usually the first thing you want -- archers that look like archers.
+#
+# Note that promoting a Recruit replaces the entity, so a promoted unit is a new unit
+# with a new face as well as a new type.
+#
+# [pools.archers]
+# 	include = ["unit/archer/**/*.png"]
+# 	exclude = []
+#
+# [pools.shieldmen]
+# 	include = ["unit/shieldman/**/*.png"]
+# 	exclude = []
+#
+# [[rules]]
+# 	id = "archers"
+# 	priority = 200
+# 	pools = ["archers"]
+#
+# 	[rules.when]
+# 	unitTypes = ["bowman", "crossbowman"]
+#
+# [[rules]]
+# 	id = "shieldmen"
+# 	priority = 200
+# 	pools = ["shieldmen"]
+#
+# 	[rules.when]
+# 	unitTypes = ["recruit_shieldman"]
+
+
+# --- 2. Regional pools by the unit's own variant ---------------------------
+#
+# biomeVariants is the region Recruits assigned a unit when it was created: desert,
+# jungle, plains, savanna, snowy_tundra, swamp or taiga. It stays with the unit when it
+# travels, so a desert patrol still looks like a desert patrol up in the mountains.
+# This is usually what you want for regional uniforms.
+#
+# variants is the other half of a unit's stored appearance: which of Recruits' twenty
+# base faces (human_0.png to human_19.png) it was given. Write single numbers or
+# inclusive ranges.
+#
+# [pools.common]
+# 	include = ["common/**/*.png"]
+# 	exclude = []
+#
+# [pools.desert]
+# 	include = ["biome/desert/**/*.png"]
+# 	exclude = []
+#
+# [pools.snow]
+# 	include = ["biome/snow/**/*.png"]
+# 	exclude = []
+#
+# [[rules]]
+# 	id = "desert_units"
+# 	priority = 100
+# 	pools = ["desert", "common"]
+# 	poolMode = "union"
+#
+# 	[rules.when]
+# 	biomeVariants = ["desert"]
+#
+# [[rules]]
+# 	id = "snowy_units"
+# 	priority = 100
+# 	pools = ["snow", "common"]
+# 	poolMode = "union"
+#
+# 	[rules.when]
+# 	biomeVariants = ["snowy_tundra"]
+# 	variants = [0, 1, "5-9"]
+
+
+# --- 3. Pools by faction ---------------------------------------------------
+#
+# factions matches the unit's faction, which is also the name of the scoreboard team
+# Recruits puts it on. * and ? work, and matching ignores capitalisation. "teams" is
+# accepted as another name for this field; give one or the other, not both.
+#
+# hasFaction = false picks out unhired and unaffiliated units.
+#
+# unitColors matches the faction colour Recruits paints a unit in: white, black,
+# light_grey, grey, dark_grey, light_blue, blue, dark_blue, light_green, green,
+# dark_green, light_red, red, dark_red, light_brown, brown, dark_brown, light_cyan,
+# cyan, dark_cyan, yellow, orange, magenta, purple or gold. A number 0-24 also works.
+#
+# [pools.empire]
+# 	include = ["faction/empire/**/*.png"]
+# 	exclude = []
+#
+# [pools.freelancers]
+# 	include = ["faction/freelance/**/*.png"]
+# 	exclude = []
+#
+# [[rules]]
+# 	id = "empire"
+# 	priority = 250
+# 	pools = ["empire"]
+#
+# 	[rules.when]
+# 	factions = ["empire_*"]
+#
+# [[rules]]
+# 	id = "unaffiliated"
+# 	priority = 50
+# 	pools = ["freelancers"]
+#
+# 	[rules.when]
+# 	hasFaction = false
+
+
+# --- 4. The biome a Recruit is standing in right now ------------------------
+#
+# currentBiomes is live. A Recruit that walks out of the badlands stops matching this and
+# changes skin. That is the point -- use biomeVariants instead if you want it to stay put.
+#
+# Accepts exact IDs, #tags, and wildcards, so one rule can cover modded biomes you do
+# not have installed. An ID naming a mod you do not have simply never matches.
+#
+# [pools.badlands]
+# 	include = ["biome/badlands/**/*.png"]
+# 	exclude = []
+#
+# [[rules]]
+# 	id = "badlands_patrol"
+# 	priority = 150
+# 	pools = ["badlands"]
+#
+# 	[rules.when]
+# 	currentBiomes = ["#minecraft:is_badlands", "terralith:*_badlands"]
+# 	dimensions = ["minecraft:overworld"]
+
+
+# --- 5. Pools by what the Recruit is holding -------------------------------
+#
+# Categories: empty, sword, axe, bow, crossbow, trident, shield, melee, ranged, other,
+# weaponless. A stack carries several at once -- a bow is both "bow" and "ranged", a
+# sword both "sword" and "melee" -- so write broad or narrow rules as you like.
+#
+# weaponHand chooses which hand the categories describe: main (default), off, either
+# or both.
+#
+# [pools.swordsmen]
+# 	include = ["weapon/sword/**/*.png"]
+# 	exclude = []
+#
+# [pools.unarmed]
+# 	include = ["weapon/unarmed/**/*.png"]
+# 	exclude = []
+#
+# [[rules]]
+# 	id = "swordsmen"
+# 	priority = 200
+# 	pools = ["swordsmen"]
+#
+# 	[rules.when]
+# 	weaponCategories = ["sword"]
+# 	weaponHand = "main"
+#
+# [[rules]]
+# 	id = "unarmed"
+# 	priority = 100
+# 	pools = ["unarmed"]
+#
+# 	[rules.when]
+# 	weaponCategories = ["weaponless"]
+# 	weaponHand = "either"
+
+
+# --- 6. Combining region and weapon, with priority -------------------------
+#
+# Rules are tried highest priority first, and the first one that matches and has skins
+# available wins. So a rule that is specific about both axes simply gets a higher number
+# than the two general rules it should beat.
+#
+# onEmpty = "continue" means that if you have not drawn any desert archers yet, the rule
+# quietly steps aside and the general archer rule applies instead.
+#
+# [pools.desert_archers]
+# 	include = ["special/desert_archer/**/*.png"]
+# 	exclude = []
+#
+# [[rules]]
+# 	id = "desert_archers"
+# 	priority = 300
+# 	pools = ["desert_archers"]
+# 	onEmpty = "continue"
+#
+# 	[rules.when]
+# 	biomeVariants = ["desert"]
+# 	weaponCategories = ["bow", "crossbow"]
+# 	weaponHand = "main"
+
+
+# --- 7. One skin in several pools ------------------------------------------
+#
+# skinOverrides change which pools a file belongs to without moving or copying it.
+# Once a skin is in both "desert" and "archers", a rule can intersect the two.
+#
+# [[skinOverrides]]
+# 	patterns = ["special/desert_archer_*.png"]
+# 	addToPools = ["desert", "archers"]
+#
+# [[rules]]
+# 	id = "desert_archers_by_membership"
+# 	priority = 290
+# 	pools = ["desert", "archers"]
+# 	poolMode = "intersection"
+#
+# 	[rules.when]
+# 	biomeVariants = ["desert"]
+# 	weaponCategories = ["ranged"]
+
+
+# --- 8. Modded weapons -----------------------------------------------------
+#
+# Teach the classifier about a weapon this mod has never heard of. The categories you
+# add here can then be used in any rule. If the mod is not installed, nothing matches
+# and nothing breaks -- one rulebook can cover a pack whether or not the mod is present.
+#
+# Recruits' own musket support is a good example: it arms units from Musket Mod, whose
+# items this mod would otherwise class as "other".
+#
+# [[weaponOverrides]]
+# 	id = "muskets"
+# 	priority = 100
+# 	items = ["musketmod:*musket*", "#musketmod:muskets"]
+# 	addCategories = ["firearm", "ranged"]
+# 	removeCategories = ["other"]
+#
+# [pools.musketeers]
+# 	include = ["weapon/musket/**/*.png"]
+# 	exclude = []
+#
+# [[rules]]
+# 	id = "musketeers"
+# 	priority = 220
+# 	pools = ["musketeers"]
+#
+# 	[rules.when]
+# 	weaponCategories = ["firearm"]
+# 	weaponHand = "main"
+
+
+# --- 9. Making one skin rare -----------------------------------------------
+#
+# Weight is relative, not a percentage. At 0.15 the captain skin is roughly one-seventh
+# as likely as an ordinary one in the same pool -- it does not mean 15%. A weight of 0
+# takes the skin out of selection entirely while leaving the file where it is.
+#
+# [[skinOverrides]]
+# 	patterns = ["common/veteran.png"]
+# 	addToPools = ["common"]
+# 	weight = 0.15
+#
+# Or make it rare in one pool and ordinary in another:
+#
+# [[skinOverrides]]
+# 	patterns = ["common/veteran.png"]
+# 	weight = 1.0
+#
+# 	[skinOverrides.poolWeights]
+# 	elite = 5.0
+# 	common = 0.15
+
+
+# --- 10. Retiring a skin without deleting it -------------------------------
+#
+# [[skinOverrides]]
+# 	patterns = ["legacy/**", "**/do_not_use_*.png"]
+# 	exclude = true
+
+
+# --- 11. Recruits' own clothing layers -------------------------------------
+#
+# Recruits draws three layers over a unit: its faction colour, its regional uniform and
+# the cloth that marks companions such as messengers, scouts and captains. Each one has
+# a global setting in [recruitsLayers] in config/recruitsskins-client.toml, and a rule
+# can disagree with any of them for the units it matches.
+#
+#   inherit   - whatever the config says. The default.
+#   show      - draw the layer over the custom skin.
+#   hide      - do not draw it.
+#   team_only - teamOverlay only: keep the faction colour on a unit that has one, drop
+#               the generic base cloth on units that do not.
+#
+# None of these do anything to a unit that has no custom skin -- hiding cloth with
+# nothing underneath would leave a blank Recruit.
+#
+# [[rules]]
+# 	id = "messengers_keep_their_markings"
+# 	priority = 400
+# 	pools = ["all"]
+# 	companionOverlay = "show"
+# 	biomeOverlay = "hide"
+#
+# 	[rules.when]
+# 	unitTypes = ["messenger", "scout"]
+
+
+# --- 12. Deliberately keeping Recruits' own look ---------------------------
+#
+# action = "upstream" means "no custom skin here". Showing all three layers puts the
+# whole upstream appearance back, so these units look exactly as they would without
+# this mod installed.
+#
+# [[rules]]
+# 	id = "nether_uses_upstream"
+# 	priority = 1000
+# 	action = "upstream"
+# 	teamOverlay = "show"
+# 	biomeOverlay = "show"
+# 	companionOverlay = "show"
+#
+# 	[rules.when]
+# 	dimensions = ["minecraft:the_nether"]
+
+
+# --- Rule reference ---------------------------------------------------------
+#
+# [[rules]]
+# 	id               required, unique. Letters, digits, _ . - only.
+# 	priority         higher goes first. Default 0.
+# 	enabled          false switches a rule off without deleting it. Default true.
+# 	action           "select" (default) or "upstream".
+# 	pools            which pools to choose from. Required for select.
+# 	poolMode         "union" (default), "intersection", or "first_non_empty".
+# 	onEmpty          "continue", "fallback" or "upstream". Defaults to defaults.emptyRule.
+# 	selectionSalt    optional text that rerolls which skin each Recruit gets under this rule.
+# 	teamOverlay      "inherit" (default), "show", "hide" or "team_only".
+# 	biomeOverlay     "inherit" (default), "show" or "hide".
+# 	companionOverlay "inherit" (default), "show" or "hide".
+#
+# 	[rules.when]        every field is optional; all present fields must be satisfied
+# 	unitTypes           bowman, recruit_shieldman, horseman, messenger, ...
+# 	biomeVariants       stable region: desert, jungle, plains, savanna, snowy_tundra,
+# 	                    swamp, taiga
+# 	variants            which base face: 0-19, as numbers or "3-7" ranges
+# 	factions            faction / team name; * and ? work, case is ignored
+# 	                    ("teams" is another name for this field)
+# 	hasFaction          true or false ("hasTeam" is another name for this field)
+# 	unitColors          faction colour by name, or 0-24
+# 	currentBiomes       live biome: exact ID, #tag, or wildcard
+# 	dimensions          minecraft:overworld, minecraft:the_nether, ...
+# 	mainHand / offHand  exact item ID, #tag, or wildcard
+# 	weaponCategories    empty, sword, axe, bow, crossbow, trident, shield, melee,
+# 	                    ranged, other, weaponless, plus any you add in weaponOverrides
+# 	weaponHand          main (default), off, either, both
+# 	hasShield           true or false
+#
+# 	Each of unitTypes, biomeVariants, variants, factions, unitColors, currentBiomes,
+# 	dimensions, mainHand, offHand and weaponCategories also has a "not" form:
+# 	notUnitTypes, notBiomeVariants, notVariants, notFactions, notUnitColors,
+# 	notCurrentBiomes, notDimensions, notMainHand, notOffHand, notWeaponCategories.
+#
+# Within one list, any entry matching is enough. Across different fields, all of them
+# must match. To express "either of two quite different situations", write two rules
+# with the same pools.

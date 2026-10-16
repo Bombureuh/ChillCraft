@@ -1,0 +1,10 @@
+{
+	"rangedWeapons": {
+		"weirwood_longbow": {
+			"durability": 550,
+			"pullTime": 40,
+			"projectileSpeed": 5.0,
+			"enabled": true
+		}
+	}
+}

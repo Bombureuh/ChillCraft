@@ -1,0 +1,78 @@
+
+#Recruits Skins -- client-only settings.
+#Skins live in config/recruits_skins. Nothing here is sent to a server.
+[general]
+	#Master switch. When false, Recruits render exactly as Recruits draws them.
+	enabled = true
+	#Shuffles which Recruit gets which skin. Change it to reroll every Recruit.
+	#Modpacks that want every player to see identical Recruits must ship the same seed.
+	#Range: -9223372036854775808 ~ 9223372036854775807
+	selectionSeed = 0
+	#Draw the skin's jacket, sleeve and trouser overlay layers.
+	#On by default: a player skin is incomplete without them. Those layers sit slightly
+	#outside the body, so opaque pixels there can cover Recruits' team or companion
+	#cloth. Turn this off if an unobstructed upstream uniform matters more than skin
+	#fidelity. The hat layer is part of the base model and is unaffected.
+	renderPlayerOuterLayers = true
+
+[models]
+	#How to tell classic (4px arms) from slim (3px arms) when the filename says nothing.
+	#A _slim / _classic filename suffix, or a slim/ or classic/ subfolder, always wins.
+	#auto    - inspect the texels only a classic arm uses; transparent means slim
+	#classic - unmarked skins are classic
+	#slim    - unmarked skins are slim
+	armModelDetection = "auto"
+
+#What to do with Recruits' own clothing layers while a custom skin is showing.
+#None of these settings change anything for a Recruit that has no custom skin.
+[recruitsLayers]
+	#Recruits' team-colour layer paints the team colour on a teamed unit and its
+	#generic human_base_cloth.png on everyone else.
+	#OFF       - draw neither
+	#TEAM_ONLY - keep the team colour, drop the generic base cloth (default)
+	#UPSTREAM  - keep both, exactly as Recruits draws them
+	teamOverlayMode = "TEAM_ONLY"
+	#Draw Recruits' regional biome clothing on top of a custom skin.
+	#Off by default: it is a full-body texture and would cover the skin you chose.
+	applyBiomeOverlay = false
+	#Draw Recruits' companion cloth on messengers, scouts, captains and the like.
+	#On by default: it communicates a role the player relies on reading.
+	applyCompanionOverlay = true
+
+[loading]
+	#Scan subfolders of config/recruits_skins.
+	recursive = true
+	#How deep to walk. 1 is the skin folder itself.
+	#Range: 1 ~ 16
+	maxScanDepth = 8
+	#Ceiling on loaded skins. Files past the limit are skipped in stable-key order and reported.
+	#Range: 1 ~ 4096
+	maxSkinCount = 512
+	#Largest PNG to consider. A real 64x64 skin is a few KiB.
+	#Range: 16 ~ 16384
+	maxFileSizeKiB = 1024
+	#Log one summary line per reload.
+	showReloadSummary = true
+
+#How a Recruit's skin is chosen.
+[selection]
+	#flat  - every loaded skin is eligible for every Recruit (default)
+	#rules - use config/recruitsskins-rules.toml to sort skins into pools and
+	#        choose between them by unit type, region, faction or weapon.
+	#        The rules file is created on first launch with everything switched
+	#        off, so turning this on without editing it changes nothing.
+	selectionMode = "flat"
+	#Rules mode only. How long a Recruit must stay in its new situation before
+	#its skin is allowed to change, in ticks (20 = one second).
+	#0 is immediate. Raise it if units walking a biome border or swapping weapons
+	#mid-fight flicker between two looks. A Recruit seen for the first time is
+	#always immediate, whatever this says.
+	#Range: 0 ~ 6000
+	contextChangeDelayTicks = 0
+
+[cache]
+	#How many Recruit-to-skin assignments to remember before evicting the least recently seen.
+	#Purely a lookup cache: selection is deterministic, so an evicted Recruit gets the same skin back.
+	#Range: 256 ~ 65536
+	maxRecruitAssignments = 8192
+
