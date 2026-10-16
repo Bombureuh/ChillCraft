@@ -25,6 +25,13 @@ LOADER_VERSION = ""              # vide = dernière version ; mieux vaut fixer c
 SERVER_NAME = "ChillCraft"
 SERVER_IP = "mc304.boxtoplay.com:26840"   # à remplacer par l'adresse réelle, ex. "play.monserveur.fr:25565"
 
+# --- Autres serveurs proposés dans le launcher (facultatif) --------------------
+# Chaque joueur peut aussi choisir "Serveur personnalisé" (n'importe quelle version + IP de son choix).
+# Exemple : {"name": "Survie Vanilla", "ip": "vanilla.monserveur.fr", "minecraft": "1.21.1"}
+EXTRA_SERVERS = [
+    # {"name": "Survie Vanilla", "ip": "mc304.boxtoplay.com:26624", "minecraft": "26.3"},
+]
+
 # --- Thème (modifiable à tout moment sans recréer l'.exe) ---------------------
 THEME = {
     "launcher_name": "CHILL CRAFT MC",
@@ -84,6 +91,7 @@ manifest = {
     "loader_version": LOADER_VERSION,
     "server": {"name": SERVER_NAME, "ip": SERVER_IP},
     "theme": THEME,
+    "servers": EXTRA_SERVERS,
     "files": files,
 }
 
