@@ -7,17 +7,18 @@
     "ip": "mc304.boxtoplay.com:26840"
   },
   "theme": {
-    "launcher_name": "CHILL CRAFT",
-    "tagline": "Bienvenue sur CHILLCRAFT",
+    "launcher_name": "CHILL CRAFT MC",
+    "tagline": "Bienvenue sur le serveur",
     "icon": "⛏",
-    "bg": "#0d1117",
-    "panel": "#141a22",
-    "card": "#1c232d",
-    "accent": "#f97316",
-    "accent_hover": "#ea580c",
-    "text": "#f3f4f6",
-    "muted": "#8b97a8",
-    "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene.webp"
+    "bg": "#1e1e1f",
+    "panel": "#242425",
+    "card": "#313233",
+    "accent": "#3c8527",
+    "accent_hover": "#4a9e33",
+    "text": "#ffffff",
+    "muted": "#a0a1a3",
+    "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene_mc.webp",
+    "logo_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/logo_mc.png"
   },
   "files": [
     {

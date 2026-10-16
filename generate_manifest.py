@@ -1,5 +1,5 @@
 """
-Génère manifest.json pour le launcher (v5).
+Génère manifest.json pour le launcher (v7).
 
 Dossier attendu (à côté de ce script) :
     pack/mods/      -> les .jar des mods
@@ -27,23 +27,23 @@ SERVER_IP = "mc304.boxtoplay.com:26840"   # à remplacer par l'adresse réelle, 
 
 # --- Thème (modifiable à tout moment sans recréer l'.exe) ---------------------
 THEME = {
-    "launcher_name": "CHILL CRAFT",
-    "tagline": "Bienvenue sur CHILLCRAFT",
+    "launcher_name": "CHILL CRAFT MC",
+    "tagline": "Bienvenue sur le serveur",
     "icon": "⛏",
-    "bg": "#0d1117",
-    "panel": "#141a22",
-    "card": "#1c232d",
-    "accent": "#f97316",          # orange du kayak
-    "accent_hover": "#ea580c",
-    "text": "#f3f4f6",
-    "muted": "#8b97a8",
-    # Image de la scène à gauche (fixe ou animée : .webp, .gif, .png, .jpg).
-    # Envoie scene.webp à la racine de ton dépôt GitHub.
-    "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene.webp",
+    "bg": "#1e1e1f",
+    "panel": "#242425",
+    "card": "#313233",
+    "accent": "#3c8527",          # vert du bouton JOUER
+    "accent_hover": "#4a9e33",
+    "text": "#ffffff",
+    "muted": "#a0a1a3",
+    # Envoie scene_mc.webp et logo_mc.png à la racine de ton dépôt GitHub.
+    "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene_mc.webp",
+    "logo_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/logo_mc.png",
 }
 
 # --- Mise à jour automatique du launcher ---------------------------------------
-LAUNCHER_VERSION = "1.1.1"   # doit être la même que LAUNCHER_VERSION dans launcher_v5.py quand tu publies
+LAUNCHER_VERSION = "1.3.0"   # doit être la même que LAUNCHER_VERSION dans launcher_v7.py quand tu publies
 LAUNCHER_URL = "https://github.com/Bombureuh/ChillCraft/releases/latest/download/ChillCraftLauncher.exe"
 LAUNCHER_EXE = os.path.join("dist", "ChillCraftLauncher.exe")   # .exe local, sert à calculer l'empreinte
 
