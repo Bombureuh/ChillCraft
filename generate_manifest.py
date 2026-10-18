@@ -23,13 +23,13 @@ LOADER_VERSION = ""              # vide = dernière version ; mieux vaut fixer c
 
 # --- Serveur (modifiable à tout moment sans recréer l'.exe) -------------------
 SERVER_NAME = "ChillCraft"
-SERVER_IP = "mc304.boxtoplay.com:26840"   # à remplacer par l'adresse réelle, ex. "play.monserveur.fr:25565"
+SERVER_IP = "mc304.boxtoplay.com:26840"
 
 # --- Autres serveurs proposés dans le launcher (facultatif) --------------------
 # Chaque joueur peut aussi choisir "Serveur personnalisé" (n'importe quelle version + IP de son choix).
 # Exemple : {"name": "Survie Vanilla", "ip": "vanilla.monserveur.fr", "minecraft": "1.21.1"}
 EXTRA_SERVERS = [
-     {"name": "Survie Vanilla", "ip": "mc304.boxtoplay.com:26624", "minecraft": "26.3"},
+    # {"name": "Survie Vanilla", "ip": "vanilla.monserveur.fr", "minecraft": "1.21.1"},
 ]
 
 # --- Thème (modifiable à tout moment sans recréer l'.exe) ---------------------
@@ -50,7 +50,7 @@ THEME = {
 }
 
 # --- Mise à jour automatique du launcher ---------------------------------------
-LAUNCHER_VERSION = "1.3.0"   # doit être la même que LAUNCHER_VERSION dans launcher_v7.py quand tu publies
+LAUNCHER_VERSION = "1.4.0"   # doit être la même que LAUNCHER_VERSION dans launcher_v7.py quand tu publies
 LAUNCHER_URL = "https://github.com/Bombureuh/ChillCraft/releases/latest/download/ChillCraftLauncher.exe"
 LAUNCHER_EXE = os.path.join("dist", "ChillCraftLauncher.exe")   # .exe local, sert à calculer l'empreinte
 
