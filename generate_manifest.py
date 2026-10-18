@@ -50,7 +50,7 @@ THEME = {
 }
 
 # --- Mise à jour automatique du launcher ---------------------------------------
-LAUNCHER_VERSION = "1.4.2"   # doit être la même que LAUNCHER_VERSION dans launcher_v7.py quand tu publies
+LAUNCHER_VERSION = "1.4.3"   # doit être la même que LAUNCHER_VERSION dans launcher_v7.py quand tu publies
 LAUNCHER_URL = "https://github.com/Bombureuh/ChillCraft/releases/latest/download/ChillCraftLauncher.exe"
 LAUNCHER_EXE = os.path.join("dist", "ChillCraftLauncher.exe")   # .exe local, sert à calculer l'empreinte
 
