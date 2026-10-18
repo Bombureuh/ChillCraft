@@ -20,13 +20,7 @@
     "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene_mc.webp",
     "logo_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/logo_mc.png"
   },
-  "servers": [
-    {
-      "name": "Survie Vanilla",
-      "ip": "mc304.boxtoplay.com:26624",
-      "minecraft": "26.3"
-    }
-  ],
+  "servers": [],
   "files": [
     {
       "path": "config/MouseTweaks.cfg",
@@ -552,6 +546,11 @@
       "path": "mods/jei-1.20.1-forge-15.56.0.205.jar",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/jei-1.20.1-forge-15.56.0.205.jar",
       "sha1": "7f64b7f8fde7f001ef054dabe3618a8780ba2650"
+    },
+    {
+      "path": "mods/letsdo-API-forge-1.2.11-forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/letsdo-API-forge-1.2.11-forge.jar",
+      "sha1": "ebfad033649a1d05bd154a266373635ce5683d74"
     },
     {
       "path": "mods/letsdo-brewery-forge-1.1.9.jar",
