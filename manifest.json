@@ -20,13 +20,7 @@
     "background_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/scene_mc.webp",
     "logo_image": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/logo_mc.png"
   },
-  "servers": [
-    {
-      "name": "Survie Vanilla",
-      "ip": "mc304.boxtoplay.com:26624",
-      "minecraft": "26.3"
-    }
-  ],
+  "servers": [],
   "files": [
     {
       "path": "config/MouseTweaks.cfg",
@@ -552,6 +546,21 @@
       "path": "mods/jei-1.20.1-forge-15.56.0.205.jar",
       "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/jei-1.20.1-forge-15.56.0.205.jar",
       "sha1": "7f64b7f8fde7f001ef054dabe3618a8780ba2650"
+    },
+    {
+      "path": "mods/letsdo-API-forge-1.2.11-forge.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/letsdo-API-forge-1.2.11-forge.jar",
+      "sha1": "ebfad033649a1d05bd154a266373635ce5683d74"
+    },
+    {
+      "path": "mods/letsdo-brewery-forge-1.1.9.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/letsdo-brewery-forge-1.1.9.jar",
+      "sha1": "50e5181e734dcfc599aa0eaac376ff4e312f63c2"
+    },
+    {
+      "path": "mods/letsdo-vinery-forge-1.4.41.jar",
+      "url": "https://raw.githubusercontent.com/Bombureuh/ChillCraft/main/pack/mods/letsdo-vinery-forge-1.4.41.jar",
+      "sha1": "68ed3fa9524bef601064f49f60a30423db2f8fdc"
     },
     {
       "path": "mods/mcw-doors-1.1.5-mc1.20.1forge.jar",
